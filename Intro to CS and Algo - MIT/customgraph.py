@@ -1,4 +1,6 @@
-from graph import Digraph,Edge,Node
+from graph import Digraph,Edge
+
+
 class WeightedEdge(Edge):
     def __init__(self, src, dest, weight, outdoor):
         self.weight = weight

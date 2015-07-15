@@ -1,6 +1,3 @@
-import numpy
-import random
-import pylab
 from ps3b import *
 
 #

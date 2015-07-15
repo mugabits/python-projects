@@ -1,8 +1,5 @@
 # 6.00 Problem Set 9
 
-import numpy
-import random
-import pylab
 from ps3b import *
 
 ##
