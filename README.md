@@ -2,9 +2,10 @@ PythonTraining
 ===========
 For more information about me, visit - www.jmugz3.com
 
+
 edX
 --------------
-Python Problem Sets for 6.00.1x and 6.00.2x
+MIT - Intro to CS and Algo
 
 **6.00.2x**
 - Problem Set 1 <br />
@@ -34,18 +35,20 @@ Python Problem Sets for 6.00.1x and 6.00.2x
 - Problem Set 7 <br />
 	
 
-
 **6.00.1x**
-- Problem Set 1
-- Problem Set 2
-- Problem Set 3
-- Problem Set 4
-- Problem Set 5
-- Problem Set 6
-- Problem Set 7
+- Some of Problem Sets 1 through 7
+
+Coursera
+--------------
+Stanford - Algo I: Design & Analysis
+
+- Inversions
+	Returns the number of inversions of a given array
 
 
-Experiments
+
+
+Future Experiments
 --------------
 - Checkers
 - Bingo
