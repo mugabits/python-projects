@@ -8,11 +8,10 @@
 
 def readInput():
     file = open("testInv1.txt", "r")
-    test_list = file.read().split('\n')
+    test_list = file.read().split('\n') #returns a list of strings
     file.close()
     testList = [int(x) for x in test_list]
-    # print len(testList) > 0
-    # print len(testList) #array is too large to print in PyCharm
+    # print len(testList) > 0 #array is too large to print in PyCharm
     return testList, len(testList)
 
 def inversionSortCount(A):

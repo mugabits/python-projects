@@ -2,7 +2,6 @@ PythonTraining
 ===========
 For more information about me, visit - www.jmugz3.com
 
-
 edX
 --------------
 MIT - Intro to CS and Algo
