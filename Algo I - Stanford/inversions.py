@@ -7,51 +7,80 @@
 """
 
 def readInput():
+    file = open("testInv1.txt", "r")
+    test_list = file.read().split('\n')
+    file.close()
+    testList = [int(x) for x in test_list]
+    # print len(testList) > 0
+    # print len(testList) #array is too large to print in PyCharm
+    return testList, len(testList)
 
-    arr = []
-
-    return arr
-
-def splitInHalf(A):
-    half = len(A)/2
-    # from stackoverflow:
-    #f = lambda A, n=3: [A[i:i+n] for i in range(0, len(A), n)]
-    #f(A)
-    return A[:half],A[half:]
-
-def inversionCount():
-
-    A = readInput()
-
+def inversionSortCount(A):
+    #print "A: " + A.__str__()
     if not A:
         print "The input array is empty"
 
     lenA = len(A)
-
-    if lenA == 0:
-        return 0
+    #print "lenA: " + lenA.__str__()
+    if lenA <= 1:
+        return A, 0
     else:
-        halfA = lenA/2
-        left , right = splitInHalf(A)
-
-        leftCount= Count(left,halfA)
-        rightCount= Count(right,halfA)
-        splitCount= CountSplit(A,lenA)
-
+        leftSorted, leftCount = inversionSortCount(A[:lenA/2])
+        rightSorted, rightCount = inversionSortCount(A[lenA/2:])
+        totalSorted, splitCount = MergeCountSplit(leftSorted, rightSorted)
 
     A = []
     lenA = 0
-    return leftCount + rightCount + splitCount
+    return totalSorted, leftCount + rightCount + splitCount
 
-def Count():
 
-    count = 0
+def MergeCountSplit(L, R):
+    C = []
+    inversionCount = 0
 
-    return count
+    while len(L) >= 0 or len(R) >= 0:
+    #if L or R:
+        if len(L) == 0 or not L:
+            C += R
+            break
+        elif len(R) == 0 or not R:
+            C += L
+            break
+        elif L[0] <= R[0]:
+            C.append(L.pop(0))
+        else:
+            C.append(R.pop(0))
+            inversionCount += len(L)
+    return C, inversionCount
 
-def CountSplit():
+    # #Option 2
+    # lenA, lenB = len(sortedA), len(sortedB)
+    # #print "len(sortedA): " + lenA.__str__()
+    # #print "len(sortedB): " + lenB.__str__()
+    # while i < lenA or j < lenB:
+    #     k = min(sortedA[i],sortedB[j])
+    #     print "min k: " + k.__str__()
+    #     C.append(k)
+    #     print "C: " + C.__str__()
+    #     if k == sortedB[j]:
+    #         j += 1
+    #         inversionCount += lenA - i
+    #     else:
+    #         i += 1
+    # #print inversionCount.__str__()
+    # #print C
+    # return C, inversionCount
 
-    count = 0
+def Solution(A):
+    sortedC, invCount = inversionSortCount(A)
+    return "inversion Count: " + invCount.__str__()
 
-    return count
 
+# TESTS
+original, n1 = readInput()
+test = [1, 3, 5, 2, 4, 6]
+test2 = [1, 3, 4, 2]
+n2 = len(test)
+
+# inversionSortCount(original, n1)
+print Solution(original)
