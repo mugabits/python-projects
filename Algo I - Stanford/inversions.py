@@ -6,13 +6,7 @@
     An inversion is number of pairs (i,j) where i < j
 """
 
-def readInput():
-    file = open("testInv1.txt", "r")
-    test_list = file.read().split('\n') #returns a list of strings
-    file.close()
-    testList = [int(x) for x in test_list]
-    # print len(testList) > 0 #array is too large to print in PyCharm
-    return testList, len(testList)
+from main import readInput
 
 def inversionSortCount(A):
     #print "A: " + A.__str__()
@@ -76,7 +70,7 @@ def Solution(A):
 
 
 # TESTS
-original, n1 = readInput()
+original, n1 = readInput("testInv1.txt")
 test = [1, 3, 5, 2, 4, 6]
 test2 = [1, 3, 4, 2]
 n2 = len(test)
