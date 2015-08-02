@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
 """
-    Reads the input from an array/text and return the number of inversions.
-    let i, j => array indices
-    An inversion is number of pairs (i,j) where i < j
+    Reads the input from an array/text and return the number of minimum number of crossing edges.
 """
 
 from main import readInput
