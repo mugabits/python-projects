@@ -12,3 +12,26 @@ def readInput(filename):
     testList = [int(x) for x in test_list]
     # print len(testList) > 0 #array is too large to print in PyCharm
     return testList, len(testList)
+
+
+
+def readGraphInput(filename):
+    with open(filename, "r") as rows:
+        graph_dict = {}
+        row_list = []
+        for row in rows:
+            row_list = row.strip().split("\t")
+            graph_dict[int(row_list.pop(0))] = list(map(int,row_list[1:]))
+
+    return graph_dict
+
+
+#
+# [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+# [(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+#
+# >>> combs = []
+# >>> for x in [1,2,3]:
+# ...     for y in [3,1,4]:
+# ...         if x != y:
+# ...             combs.append((x, y))
