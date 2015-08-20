@@ -33,20 +33,20 @@ class Edge(object):
 	def __str__(self):
 		return '{0}->{1}'.format(self.src, self.dest)
 class Digraph(object):
-"""
-A directed graph
-"""
+	"""
+	A directed graph
+	"""
 	def __init__(self):
-# A Python Set is basically a list that doesn't allow duplicates.
-# Entries into a set must be hashable (where have we seen this before?)
-# Because it is backed by a hashtable, lookups are O(1) as opposed to the O(n) of a list (nifty!)
-# See http://docs.python.org/2/library/stdtypes.html#set-types-set-frozenset
+	# A Python Set is basically a list that doesn't allow duplicates.
+	# Entries into a set must be hashable (where have we seen this before?)
+	# Because it is backed by a hashtable, lookups are O(1) as opposed to the O(n) of a list (nifty!)
+	# See http://docs.python.org/2/library/stdtypes.html#set-types-set-frozenset
 		self.nodes = set([])
 		self.edges = {}
 	def addNode(self, node):
 		if node in self.nodes:
-# Even though self.nodes is a Set, we want to do this to make sure we
-# don't add a duplicate entry for the same node in the self.edges list.
+	# Even though self.nodes is a Set, we want to do this to make sure we
+	# don't add a duplicate entry for the same node in the self.edges list.
 			raise ValueError('Duplicate node')
 		else:
 			self.nodes.add(node)
