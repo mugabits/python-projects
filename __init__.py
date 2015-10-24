@@ -6,7 +6,7 @@
 """
 
 
-__author__ = 'jmugz3'
-__maintainer__ = "jmugz3"
-__email__ = "mugab686@gmail.edu"
+__author__ = 'Jose Mugaburu'
+__maintainer__ = "Jose Mugaburu"
+__email__ = "mugab686@gmail.com"
 __status__ = "Prototype"
