@@ -11,16 +11,16 @@ Content
 - Sort
 
 ### Projects ###
+- Checkers
+- Bingo
+- Calculator
+- Soccer App
 ### Stats ###
 ### Examples ###
 ### File I/O ###
 ### Tests ###
+### Examples ###
+Sample projects from previous courses and from the web. 
 
-
-Future Experiments
---------------
-- Checkers
-- Bingo
-- 
 
 
