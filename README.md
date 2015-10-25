@@ -5,25 +5,22 @@ For more information about me, visit - www.jmugz3.com
 Content
 --------------
 
-** Merging - Sorting **
+### Algorithms ###
+- Graphs 
+- Hash 
+- Sort
 
-** Examples **
-
-** File i-o **
-
-** Graphs **
-
-** Hash **
-
-** Stats **
-
-** Tests **
+### Projects ###
+### Stats ###
+### Examples ###
+### File I/O ###
+### Tests ###
 
 
 Future Experiments
 --------------
 - Checkers
 - Bingo
-- Racing
+- 
 
 
