@@ -2,7 +2,7 @@
 import pylab
 import numpy as np
 
-path ='/Users/mugab686/Dev Training/edX/MITx/6.00.2x Introduction to Computational Thinking and Data Science/julyTemps.txt'
+path ='temps.txt'
 
 def BostonTemp():
     inFile = open(path,'r')
