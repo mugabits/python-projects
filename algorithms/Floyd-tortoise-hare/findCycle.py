@@ -1,3 +1,8 @@
+# Floyd's algorithm
+# 1. No Duplicates
+# 2. Closed loop
+# 3. Rho-shaped 
+
 def findDupInArray(a):
     assert len(a) > 0
 
