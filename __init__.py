@@ -8,5 +8,5 @@
 
 __author__ = 'Jose Mugaburu'
 __maintainer__ = "Jose Mugaburu"
-__email__ = "mugab686@gmail.com"
+__email__ = "mugabits@gmail.com"
 __status__ = "Prototype"
