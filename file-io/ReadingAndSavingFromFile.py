@@ -1,4 +1,4 @@
-#import string  #you need this if using string.split()
+#import string 
 import pylab
 import numpy as np
 
@@ -7,8 +7,6 @@ path ='temps.txt'
 def BostonTemp():
     inFile = open(path,'r')
     line = inFile.readline()
-    #print inFile
-
     LowTemp = []
     HighTemp = []
    
@@ -18,14 +16,11 @@ def BostonTemp():
         
     for line in inFile:
         fields = line.split() #or string.split(line)
-        #print fields 
         if len(fields) != 3 or 'Boston'== fields[0] or 'Day' == fields[0]:
             continue
         else:
             LowTemp.append(int(fields[1]))
             HighTemp.append(int(fields[2]))
-    #print LowTemp
-    #print HighTemp
     return (LowTemp,HighTemp)
 
 def producePlot(low, high):   
