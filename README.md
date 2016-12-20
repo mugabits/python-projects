@@ -50,6 +50,7 @@ Content
 - Checkers
 - Bingo
 - Calculator
+- Towers of Hanoi
 - Soccer Club Management
 
 ### Possible Others ###
