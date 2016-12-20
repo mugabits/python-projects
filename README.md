@@ -38,6 +38,7 @@ Content
 - Probability (Bayes Theorem)
 - Solve a y-function curve
 - Matrix Operations
+- Binary Exponentiation
 
 ### Tests ###
 - unit tests
