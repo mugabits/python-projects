@@ -4,7 +4,7 @@ For more information about me, visit - www.jmugz3.com, www.mugabits.com
 
 Using principles such as Divide and Conquer, Greedy Approach, Inductive Reasoning, Branch-and-Bound, Reduction, Recursion, Dynamic Programming and Memoization
 
-Will be fully updated by Jan. 15, 2017. 
+Continuously updated. 
 
 Content
 --------------
