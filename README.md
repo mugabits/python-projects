@@ -1,6 +1,6 @@
 PythonTraining with mugabits
 ============================
-For more information about me, visit - www.jmugz3.com, www.mugabits.com
+For more information about me, visit - www.jmugz3.com, www.josemugaburu.com
 
 Using principles such as Divide and Conquer, Greedy Approach, Inductive Reasoning, Branch-and-Bound, Reduction, Recursion, Dynamic Programming and Memoization
 
