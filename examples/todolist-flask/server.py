@@ -1,6 +1,6 @@
 # server.py
 
-from flask import Flask
+from flask import Flask, make_response
 
 
 def main():
@@ -14,7 +14,7 @@ def configure(app):
 
     @app.route("/")
     def home():
-        return "This is home"
+        return make_response("This is home", 200)
 
 
 if __name__ == "__main__":
